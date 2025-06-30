@@ -37,10 +37,10 @@ const sendEmail = (e) => {
 
 
     return (
-        <section id="contact" className="min-h-screen py-24">
+        <section id="contact" className="min-h-screen py-24 ">
             <h2 className="text-3xl lg:text-4xl font-bold font-poppins text-center mb-16">Contact Me</h2>
 
-            <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 px-4">
+            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-4">
                 {/* Contact Form */}
                 <form ref={form} onSubmit={sendEmail} className="bg-white p-8 rounded-xl shadow-md space-y-5">
                     <input

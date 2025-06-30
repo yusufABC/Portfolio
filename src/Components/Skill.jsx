@@ -23,9 +23,9 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 ">
+    <section id="skills" className="pt-20 ">
         <h2 className="text-3xl lg:text-4xl font-poppins font-bold text-center mb-16">Skills</h2>
-      <div className="container mx-auto px-4 lg:px-8">
+      <div className="container w-2xl md:w-4xl lg:w-5xl rounded-3xl mx-auto px-4 lg:px-8">
         
   <div className="  mx-auto px-4">
   {/* Single Card */}

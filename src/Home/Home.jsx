@@ -7,6 +7,7 @@ import Projects from "../Components/Projects/Projects";
 import AnimatedSection from "../Components/AnimatedSection";
 import Contact from "../Components/Projects/Contact";
 import { Fade } from "react-awesome-reveal";
+import SkillProficiencey from "../Components/Skills test/SkillProficiencey";
 
 const Home = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -41,14 +42,17 @@ const Home = () => {
       <section  className="min-h-screen">
         <AnimatedSection>
           <Skill />
+            <SkillProficiencey/>
         </AnimatedSection>
       </section>
-
+      
+ 
       <section  className="min-h-screen">
         <Fade direction="up" triggerOnce>
           <Projects />
         </Fade>
       </section>
+
 
       <section  className="min-h-screen">
         <AnimatedSection>
