@@ -5,6 +5,7 @@ import React from 'react';
 const AnimatedSection = ({ children }) => {
   const { ref, inView } = useInView({
     threshold: 0.2, // Adjust as needed
+      triggerOnce: true,
   });
 
   return (

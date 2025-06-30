@@ -4,7 +4,7 @@ import { Fade } from 'react-awesome-reveal';
 import { Typewriter } from 'react-simple-typewriter';
 const Hero = () => {
   return (
-    <section className="min-h-screen flex  items-center justify-center px-4 lg:px-8">
+    <section id='hero' className="min-h-screen flex  items-center justify-center px-4 lg:px-8">
       
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -65,6 +65,7 @@ const Hero = () => {
 </Fade>
           </div>
           <div className="order-1 lg:order-2 flex justify-center">
+          <Fade direction='up' triggerOnce='true'>
             <div className="w-80 h-80 rounded-full overflow-hidden border-8 border-gray-300 shadow-xl">
               <img 
                 src="https://i.ibb.co/84rF4PRQ/190f61f3-8193-494f-b534-8f9728cf6934.jpg" 
@@ -72,6 +73,7 @@ const Hero = () => {
                 className="w-full h-full object-cover"
               />
             </div>
+          </Fade>
           </div>
         </div>
       </div>

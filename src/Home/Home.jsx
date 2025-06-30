@@ -1,48 +1,63 @@
-import React, { useState } from 'react';
-import Navbar from '../Components/Navbar';
-import Hero from '../Components/Hero';
-import About from '../Components/About';
-import Skill from '../Components/Skill';
-import Projects from '../Components/Projects/Projects';
-import { Fade, Slide, Zoom } from 'react-awesome-reveal';
-import AnimatedSection from '../Components/AnimatedSection';
-import Contact from '../Components/Projects/Contact';
+import React, { useState } from "react";
+import Navbar from "../Components/Navbar";
+import Hero from "../Components/Hero";
+import About from "../Components/About";
+import Skill from "../Components/Skill";
+import Projects from "../Components/Projects/Projects";
+import AnimatedSection from "../Components/AnimatedSection";
+import Contact from "../Components/Projects/Contact";
+import { Fade } from "react-awesome-reveal";
 
 const Home = () => {
-    //   const [selectedProject, setSelectedProject] = useState(null);
   const [isDarkMode, setIsDarkMode] = useState(false);
-      const toggleTheme = () => {
+
+  const toggleTheme = () => {
+    const newTheme = isDarkMode ? "light" : "dracula";
+    document.documentElement.setAttribute("data-theme", newTheme);
+    localStorage.setItem("theme", newTheme);
     setIsDarkMode(!isDarkMode);
   };
-   return (
+
+  return (
     <div className="text-2xl font-montserrat">
-      <Navbar isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
+      <Navbar
+        isDarkMode={isDarkMode}
+        toggleTheme={toggleTheme}
+      
+      />
 
-      <AnimatedSection>
-        <Hero />
-      </AnimatedSection>
+      <section className="min-h-screen">
+        <AnimatedSection>
+          <Hero />
+        </AnimatedSection>
+      </section>
 
-      <AnimatedSection>
-        <About />
-      </AnimatedSection>
+      <section className="min-h-screen">
+        <AnimatedSection>
+          <About />
+        </AnimatedSection>
+      </section>
 
-      <AnimatedSection>
-        <Skill />
-      </AnimatedSection>
+      <section  className="min-h-screen">
+        <AnimatedSection>
+          <Skill />
+        </AnimatedSection>
+      </section>
 
-   <Fade direction='up' triggerOnce='true'>
+      <section  className="min-h-screen">
+        <Fade direction="up" triggerOnce>
+          <Projects />
+        </Fade>
+      </section>
 
-        <Projects />
-   </Fade>
-   <AnimatedSection>
-    <Contact/>
-   </AnimatedSection>
-
-
-
-  
+      <section  className="min-h-screen">
+        <AnimatedSection>
+          <Contact />
+        </AnimatedSection>
+      </section>
     </div>
   );
 };
+
 
 export default Home;

@@ -5,7 +5,7 @@ import { Fade } from 'react-awesome-reveal';
 const About = () => {
   return (
     <section id="about" className="rounded-4xl max-w-6xl mx-auto py-20">
-      <h2 className="text-3xl lg:text-4xl font-bold text-center mb-16">About Me</h2>
+      <h2 className="text-3xl lg:text-4xl font-poppins font-semibold text-center mb-16">About Me</h2>
       <div className="container mx-auto px-4 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">

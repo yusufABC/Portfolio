@@ -9,7 +9,7 @@ import project3 from '../../assets/JobHive.png';
 const Projects = () => {
   return (
     <section id="projects" className="  max-w-vw mx-auto py-20 px-4">
-      <h2 className="text-3xl lg:text-4xl font-bold text-center mb-16">My Projects</h2>
+      <h2 className="text-3xl lg:text-4xl font-bold font-poppins text-center mb-16">My Projects</h2>
       <div className='grid gap-10'>
         {/* project 1  */}
 

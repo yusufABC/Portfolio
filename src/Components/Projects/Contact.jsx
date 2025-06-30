@@ -37,8 +37,8 @@ const sendEmail = (e) => {
 
 
     return (
-        <section id="contact" className="py-24 bg-gray-50">
-            <h2 className="text-3xl lg:text-4xl font-bold text-center mb-16">Contact Me</h2>
+        <section id="contact" className="py-24">
+            <h2 className="text-3xl lg:text-4xl font-bold font-poppins text-center mb-16">Contact Me</h2>
 
             <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 px-4">
                 {/* Contact Form */}
