@@ -8,12 +8,12 @@ import Modal3 from './Modal3';
 import project3 from '../../assets/JobHive.png'; 
 const Projects = () => {
   return (
-    <section id="projects" className="  max-w-vw mx-auto py-20 px-4">
+    <section id="projects" className="  md:max-w-vw mx-auto py-20 px-4">
       <h2 className="text-3xl lg:text-4xl font-bold font-poppins text-center mb-16">My Projects</h2>
       <div className='grid gap-10'>
         {/* project 1  */}
 
-        <div className="relative right-10 w-auto md:w-4/5 group md:h-[500px]   overflow-hidden rounded-xl shadow-lg border-gray-300 border-8 bg-white mx-auto">
+        <div className="relative md:right-10 w-[500px] md:w-4/5 group md:h-[500px]   overflow-hidden rounded-xl shadow-lg border-gray-300 border-8 bg-white mx-auto">
 
           {/* Image container that expands on hover */}
           <div className="absolute top-0 right-0 h-full w-1/2 group-hover:w-full transition-all duration-700 ease-in-out overflow-hidden">
@@ -54,7 +54,7 @@ const Projects = () => {
           </div>
         </div>
         {/* project 2 */}
-        <div className="relative left-15 w-auto md:w-4/5 group md:h-[500px]   overflow-hidden rounded-xl shadow-lg border-gray-300 border-8 bg-white mx-auto">
+        <div className="relative md:left-15 w-auto md:w-4/5 group md:h-[500px]   overflow-hidden rounded-xl shadow-lg border-gray-300 border-8 bg-white mx-auto">
 
           {/* Image container that expands on hover */}
           <div className="absolute top-0 right-0 h-full w-1/2 group-hover:w-full transition-all duration-700 ease-in-out overflow-hidden">
@@ -98,7 +98,7 @@ const Projects = () => {
           </div>
         </div>
         {/* project-3  */}
-      <div className="relative right-15 w-auto md:w-4/5 group md:h-[500px]   overflow-hidden rounded-xl shadow-lg border-gray-300 border-8 bg-white mx-auto">
+      <div className="relative md:right-15 w-auto md:w-4/5 group md:h-[500px]   overflow-hidden rounded-xl shadow-lg border-gray-300 border-8 bg-white mx-auto">
 
 
           {/* Image container that expands on hover */}
